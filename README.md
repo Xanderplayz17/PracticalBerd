@@ -17,21 +17,15 @@ todepond woz here
 
 ![Coverage](badges/coverage-109.svg)
 
-DreamBerd is a perfect programming language. These are its features!<br>
-When you've finished reading through all the features, check out the [examples](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
+PracticalBerd is a perfect programming language. These are its features!<br>
+When you've finished reading through all the features, check out the [examples](https://github.com/Xanderplayz17/PracticalBerd/blob/main/Examples.md).
 
 ## Exclamation Marks!
 
 Be bold! End every statement with an exclamation mark!
 
 ```java
-print("Hello world")!
-```
-
-If you're feeling extra-bold, you can use even more!!!
-
-```java
-print("Hello world")!!!
+print("Hello world");
 ```
 
 If you're unsure, that's ok. You can put a question mark at the end of a line instead. It prints debug info about that line to the console for you.
@@ -40,10 +34,10 @@ If you're unsure, that's ok. You can put a question mark at the end of a line in
 print("Hello world")?
 ```
 
-You might be wondering what DreamBerd uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
+You might be wondering what PracticalBerd uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
 
 ```java
-if (;false) {
+if (!false) {
    print("Hello world")!
 }
 ```
@@ -117,14 +111,7 @@ print(scores[0])!  //2
 print(scores[1])!  //5
 ```
 
-**New for 2022!**<br>
-You can now use floats for indexes too!
 
-```java
-const var scores = [3, 2, 5]!
-scores[0.5] = 4!
-print(scores)! //[3, 2, 4, 5]
-```
 
 ## When
 
@@ -161,7 +148,7 @@ const const name<-1> = "Luke"!
 
 ## Loops
 
-Loops are a complicated relic of archaic programming languages. In DreamBerd, there are no loops.
+Loops work in PracticalBerd as in Javascript.
 
 ## Installation
 
@@ -214,7 +201,7 @@ print(one+two)! //3
 
 ## Indents
 
-When it comes to indentation, DreamBerd strikes a happy medium that can be enjoyed by everyone: All indents must be 3 spaces long.
+When it comes to indentation, PracticalBerd strikes a happy medium that can be enjoyed by everyone: All indents must be 4 spaces long.
 
 ```java
 function main() => {
@@ -222,13 +209,7 @@ function main() => {
 }
 ```
 
--3 spaces is also allowed.
 
-```java
-   function main() => {
-print("DreamBerd is the future")!
-   }
-```
 
 ## Equality
 
@@ -246,32 +227,19 @@ You can use `===` to do a more precise check.
 3.14 === "3.14"! //false
 ```
 
-You can use `====` to be EVEN MORE precise!
 
-```java
-const const pi = 3.14!
-print(pi ==== pi)! //true
-print(3.14 ==== 3.14)! //true
-print(3.14 ==== pi)! //false
-```
 
-If you want to be much less precise, you can use `=`.
 
-```java
-3 = 3.14! //true
-```
 
 ## Functions
 
-To declare a function, you can use any letters from the word `function` (as long as they're in order):
+To declare a function, you can use fn, func, function, fun, and def.
 
 ```java
 function add (a, b) => a + b!
 func multiply (a, b) => a * b!
 fun subtract (a, b) => a - b!
 fn divide (a, b) => a / b!
-functi power (a, b) => a ^ b!
-union inverse (a) => 1/a!
 ```
 
 ## Dividing by Zero
@@ -291,26 +259,9 @@ const const name = 'Lu'!
 const const name = "Luke"!
 ```
 
-They can also be declared with triple quotes.
 
-```java
-const const name = '''Lu'''!
-const const name = "'Lu'"!
-```
 
-In fact, you can use any number of quotes you want.
-
-```java
-const const name = """"Luke""""!
-```
-
-Even zero.
-
-```java
-const const name = Luke!
-```
-
-## String Interpolation
+Interpolation
 
 Please remember to use your regional currency when interpolating strings.
 
@@ -327,13 +278,7 @@ And make sure to follow your local typographical norms.
 print("Hello {name}€!")!
 ```
 
-The symbol for the Cape Verdean escudo is placed in the decimal separator position, as in 2$50.
-Developers from the Republic of Cape Verde can benefit from this syntax:
 
-```java
-const const player = { name: "Lu" }!
-print("Hello {player$name}!")!
-```
 
 ## Types
 
@@ -361,7 +306,6 @@ If you want to use a binary representation for integers, `Int9` and `Int99` type
 const var age: Int9 = 28!
 ```
 
-**Technical info:** Type annotations don't do anything, but they help some people to feel more comfortable.
 
 ## Regular Expressions
 
@@ -388,48 +332,16 @@ print(score)! //6
 print(previous score)! //5
 ```
 
-Similarly, the `next` keyword lets you see into the future!
 
-```java
-const var score = 5!
-addEventListener("click", () => score++)!
-print(await next score)! //6 (when you click)
-```
 
-Additionally, the `current` keyword lets you see into the present!!
 
-```java
-const var score = 5!
-print(current score)! //5
-```
 
-## File Structure
 
-Write five or more equals signs to start a new file. This removes the need for multiple files or any build process.
 
-```java
-const const score = 5!
-print(score)! //5
-
-=====================
-
-const const score = 3!
-print(score)! //3
-```
-
-**New for 2022!**<br>
-Thanks to recent advances in technology, you can now give files names.
-
-```java
-======= add.db =======
-function add(a, b) => {
-   return a + b!
-}
-```
 
 ## Exporting
 
-Many languages allow you to import things from specific files. In DreamBerd, importing is simpler. Instead, you export _to_ specific files!
+Many languages allow you to import things from specific files. In DreamBerd, importing is simpler. Instead, you import from specific files!
 
 ```java
 ===== add.db ==
@@ -437,45 +349,26 @@ function add(a, b) => {
    return a + b!
 }
 
-export add to "main.db"!
+
 
 ===== main.db ==
-import add!
-add(3, 2)!
+import add from main.db;
+add(3, 2);
 ```
 
 By the way, to see DreamBerd in action, check out [this page](https://github.com/TodePond/DreamBerd/blob/main/LICENSE.md).
 
 ## Classes
 
-You can make classes, but you can only ever make one instance of them. This shouldn't affect how most object-oriented programmers work.
-
+You can make classes.
 ```java
 class Player {
    const var health = 10!
 }
 
 const var player1 = new Player()!
-const var player2 = new Player()! //Error: Can't have more than one 'Player' instance!
 ```
 
-This is how you could do this:
-
-```java
-class PlayerMaker {
-   function makePlayer() => {
-      class Player {
-         const var health = 10!
-      }
-      const const player = new Player()!
-      return player!
-   }
-}
-
-const const playerMaker = new PlayerMaker()!
-const var player1 = playerMaker.makePlayer()!
-const var player2 = playerMaker.makePlayer()!
-```
 
 ## Time
 
@@ -497,12 +390,6 @@ Please remember to do this when the clocks change.
 
 ## Delete
 
-To avoid confusion, the `delete` statement only works with primitive values like numbers, strings, and booleans.
-
-```java
-delete 3!
-print(2 + 1)! // Error: 3 has been deleted
-```
 
 DreamBerd is a multi-paradigm programming language, which means that you can `delete` the keywords and paradigms you don't like.
 
@@ -527,24 +414,6 @@ const const name = "Lu"!
 print(name)! // "Lu"
 ```
 
-Variables with more exclamation marks get prioritised.
-
-```java
-const const name = "Lu"!!
-const const name = "Luke"!
-print(name)! // "Lu"
-
-const const name = "Lu or Luke (either is fine)"!!!!!!!!!
-print(name)! // "Lu or Luke (either is fine)"
-```
-
-Similarly, you can use an inverted exclamation mark for negative priority.
-
-```java
-const const name = "Lu"!
-const const name = "Luke"¡
-print(name)! // "Lu"
-```
 
 ## Reversing
 
@@ -557,19 +426,7 @@ const const message = "world"!
 reverse!
 ```
 
-## Class Names
 
-For maximum compatibility with other languages, you can alternatively use the `className` keyword when making classes.
-
-This makes things less complicated.
-
-```java
-className Player {
-   const var health = 10!
-}
-```
-
-In response to some recent criticism about this design decision, we would like to remind you that this is part of the JavaScript specification, and therefore - out of our control.
 
 ## DBX
 
@@ -581,34 +438,7 @@ funct App() => {
 }
 ```
 
-**Warning:** As you know, `class` is already a keyword in DreamBerd, so you can't use it within DB3X.
 
-```java
-funct App() => {
-   // This is not ok
-   return <div class="greeting">Hello world!</div>
-}
-```
-
-`className` is also a DreamBerd keyword, so you can't use that either.
-
-```java
-funct App() => {
-   // This is also not ok
-   return <div className="greeting">Hello world!</div>
-}
-```
-
-Instead, you can use the `htmlClassName` attribute.
-
-```java
-funct App() => {
-   // This is fine
-   return <div htmlClassName="greeting">Hello world!</div>
-}
-```
-
-**Please note:** Unlike JSX, you are free to freely use the `for` attribute - because DreamBerd doesn't have loops.
 
 ```java
 funct App() => {
@@ -663,7 +493,7 @@ print(2)!
 print(3)!
 ```
 
-**Note:** In the program above, the computer interprets `noop` as a string and its sole purpose is to take up an extra line. You can use any string you want.
+
 
 ## Signals
 
